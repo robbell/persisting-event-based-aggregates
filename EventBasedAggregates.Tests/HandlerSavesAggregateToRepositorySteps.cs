@@ -5,7 +5,7 @@ using TechTalk.SpecFlow;
 namespace EventBasedAggregates.Tests
 {
     [Binding]
-    public class ChangesArePersistedToTheDatabaseSteps
+    public class HandlerSavesAggregateToRepositorySteps
     {
         private CommandHandler handler;
         private IRepository repository;

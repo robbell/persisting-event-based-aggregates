@@ -56,21 +56,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangeIsPersistedToDatabase.feature.cs">
+    <Compile Include="HandlerSavesAggregateToRepository.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ChangeIsPersistedToDatabase.feature</DependentUpon>
+      <DependentUpon>HandlerSavesAggregateToRepository.feature</DependentUpon>
     </Compile>
-    <Compile Include="ChangesArePersistedToTheDatabaseSteps.cs" />
+    <Compile Include="HandlerSavesAggregateToRepositorySteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryPersistence.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepositoryPersistence.feature</DependentUpon>
+    </Compile>
+    <Compile Include="RepositoryPersistenceSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ChangeIsPersistedToDatabase.feature">
+    <None Include="HandlerSavesAggregateToRepository.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ChangeIsPersistedToDatabase.feature.cs</LastGenOutput>
+      <LastGenOutput>HandlerSavesAggregateToRepository.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="RepositoryPersistence.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>RepositoryPersistence.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EventBasedAggregates.Core\EventBasedAggregates.Core.csproj">

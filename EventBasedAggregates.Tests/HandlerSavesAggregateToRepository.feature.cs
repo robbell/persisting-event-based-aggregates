@@ -18,20 +18,20 @@ namespace EventBasedAggregates.Tests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Changes are persisted to the database")]
-    public partial class ChangesArePersistedToTheDatabaseFeature
+    [NUnit.Framework.DescriptionAttribute("Handler saves aggregate to repository")]
+    public partial class HandlerSavesAggregateToRepositoryFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "ChangeIsPersistedToDatabase.feature"
+#line 1 "HandlerSavesAggregateToRepository.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Changes are persisted to the database", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Handler saves aggregate to repository", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,10 +64,10 @@ namespace EventBasedAggregates.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Persist the event raised by the command handler")]
-        public virtual void PersistTheEventRaisedByTheCommandHandler()
+        [NUnit.Framework.DescriptionAttribute("Persist the aggregate to the repository")]
+        public virtual void PersistTheAggregateToTheRepository()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Persist the event raised by the command handler", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Persist the aggregate to the repository", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4

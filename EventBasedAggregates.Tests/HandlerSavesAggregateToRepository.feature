@@ -1,6 +1,6 @@
-﻿Feature: Changes are persisted to the database
+﻿Feature: Handler saves aggregate to repository
 
-Scenario: Persist the event raised by the command handler
+Scenario: Persist the aggregate to the repository
 	Given I have a command handler
 	When I press pass it a command
 	Then the resulting event should be persisted to the database
